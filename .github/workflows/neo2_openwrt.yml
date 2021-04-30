@@ -81,7 +81,6 @@ jobs:
           sed -i '/routing/i\src-git luci https://github.com/coolsnowwolf/luci' feeds.conf.default
           sed -i '/routing/a\src-git NanoHatOLED https://github.com/vinewx/NanoHatOLED.git' feeds.conf.default
           cat ../script/settings.sh > package/lean/default-settings/files/zzz-default-settings
-          make clean
           ./scripts/feeds update -a && ./scripts/feeds install -a
           popd
 
