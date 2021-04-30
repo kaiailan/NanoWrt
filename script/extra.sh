@@ -41,6 +41,8 @@ wget -qO- $(curl -sL $(echo "U2FsdGVkX18O1Z1KTmw1he1cry3QXZDHjzKLaBYso71PEZsiexB
 chmod +x $core
 popd
 
+# maxlicheng luci-app-unblockmusic //30042021 kylan
+git clone https://github.com/maxlicheng/luci-app-unblockmusic.git
 
 # Return to "openwrt" directory.
 cd ../
