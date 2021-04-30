@@ -79,6 +79,7 @@ jobs:
           sed -i '/luci/Id;/packages/Id;' feeds.conf.default
           sed -i '/routing/i\src-git packages https://github.com/friendlyarm/friendlywrt_project_packages^024097a846aa1a7ec5d0d2182d035584260bb80f' feeds.conf.default
           sed -i '/routing/i\src-git luci https://github.com/coolsnowwolf/luci' feeds.conf.default
+          sed -i '/routing/i\src-git node https://github.com/nxhack/openwrt-node-packages.git;openwrt-19.07' feeds.conf.default
           sed -i '/routing/a\src-git NanoHatOLED https://github.com/vinewx/NanoHatOLED.git' feeds.conf.default
           cat ../script/settings.sh > package/lean/default-settings/files/zzz-default-settings
           ./scripts/feeds update -a && ./scripts/feeds install -a
