@@ -42,7 +42,7 @@ chmod +x $core
 popd
 
 # maxlicheng luci-app-unblockmusic //30042021 kylan
-git clone https://github.com/maxlicheng/luci-app-unblockmusic.git
+#git clone https://github.com/maxlicheng/luci-app-unblockmusic.git
 
 # Return to "openwrt" directory.
 cd ../
